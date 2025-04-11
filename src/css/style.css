@@ -111,14 +111,15 @@ form {
 
 label {
     text-align: left;
-    margin-top: 2em;
+  
+    margin-top: 1em;
     font-weight: 500;
-    padding-bottom: 0.4em;
+ 
 }
 
 input {
-    padding: 1em;
-    width: 90%;
+    padding: 0.2em;
+    width: 100%;
     margin: auto;
 }
 
