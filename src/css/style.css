@@ -18,7 +18,7 @@ header {
 }
 
 
-#headertext p{
+#headertext p {
     font-size: 2em;
     color: black;
     font-weight: 700;
@@ -59,9 +59,9 @@ footer {
 
 li {
     display: inline-block;
+    border-radius: 10px;
 }
 
-a,
 #submit {
     color: rgb(25, 111, 116);
     text-decoration: none;
@@ -81,7 +81,8 @@ nav,
     display: flex;
     justify-content: center;
     padding: 2em;
-    color:black;
+    font-weight: 700;
+    color: rgb(25, 111, 116);
 
 }
 
@@ -111,10 +112,10 @@ form {
 
 label {
     text-align: left;
-  
+
     margin-top: 1em;
     font-weight: 500;
- 
+
 }
 
 input {
@@ -123,7 +124,8 @@ input {
     margin: auto;
 }
 
-#submit {
+#submit,
+button {
     background-color: rgb(252, 247, 183);
     font-size: 1em;
     border-radius: 10px;
@@ -136,7 +138,7 @@ input {
 
 .menu {
     background-color: rgb(25, 111, 116);
-  
+
 }
 
 button a {
@@ -162,8 +164,9 @@ main {
     text-align: center;
 }
 
-.deletebutton {
+button {
     border-radius: 10px;
+ width: 60%;
     background-color: rgb(255, 255, 255);
 }
 
@@ -171,7 +174,7 @@ main {
     text-decoration: underline;
 }
 
-.courses {
+#courselist {
     color: black;
     display: block;
     padding: 1em;
@@ -180,19 +183,38 @@ main {
     font-weight: 500;
     margin-top: 2em;
 }
-.courses li {
-   
+
+
+#courselist li {
+    color: white;
+    background-color: rgb(25, 111, 116);
     display: flex;
+  margin: 1em;
+    padding: 1em;
     flex-direction: column;
     text-align: left;
 }
 
-.courses li a {
-    display: flex;
-  padding:0;
-
+#courselist p {
+    padding: 0;
 }
 
+#fat {
+    padding: 0;
+    color: antiquewhite;
+    font-weight: 900;
+}
+
+button {
+    background-color: rgb(25, 111, 116);
+    color: white;
+    padding: 0.2em;
+    margin-top: 1em;
+}
+
+button:hover {
+    background-color: rgb(56, 56, 56);
+}
 
 
 #error,
@@ -202,9 +224,11 @@ main {
     font-weight: 600;
 
 }
-article p{
+
+article p {
     margin: auto;
 }
+
 .section {
     margin-bottom: 2em;
     width: 100%;
@@ -215,14 +239,24 @@ article p{
     font-size: smaller;
 }
 
+li a {
+ font-size: 1em;
+ color: rgb(255, 255, 255);
+}
+
+ a:hover {
+    color: rgb(209, 209, 209);
+}
 
 @media all and (max-width: 900px) {
     li a {
         font-size: 12px;
     }
-#headertext {
-    font-size: 24px;
-}
+
+    #headertext {
+        font-size: 24px;
+    }
+
     #error,
     #saved {
         margin: auto;
@@ -235,12 +269,13 @@ article p{
     form {
         width: 70%;
     }
-    
-.courses li a {
-    display: flex;
-  padding:0em;
-  font-size: 10px;
-}
+
+    #courselist li a {
+        display: flex;
+        padding: 0em;
+        color: rgb(212, 245, 243);
+        font-size: 10px;
+    }
 
     nav ul {
         width: 100%;

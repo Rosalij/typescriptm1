@@ -14,7 +14,6 @@
 
 
       <p id="headertext">Moment 1 TypeScript</p>
-      <a class="current" href="index.html">Your courses</a>
  
   </header>
   <main>
@@ -22,7 +21,8 @@
       <h1>Programming in TypeScript, mid sweden university</h1>
       <p>This website shows your university courses. You can add your own courses here:</p>
     </article>
-    <form action="">
+    
+    <form>
     <label for="coursename">Course name:</label>
     <input type="text" id="coursename" name="coursename">
     <label for="coursecode">Course code:</label>
@@ -35,34 +35,13 @@
 </form>
 
     <h2>Your courses:</h2>
-    <div class="section">
-      <ul class="courses">
-
-        <li>
-          Coursename: 
-        </li>
-        <li>
-          Coursecode: 
-        </li>
-        <li>
-          Syllabus: <a href="/"></a>
-        </li>
-        <li>
-          Progression: 
-        </li>
-
+      <ul id = "courselist">
       </ul>
-      <a class="deletebutton" href="/">Delete course</a>
-    </div>
-
-    <p id="nocourses">No courses saved yet..</p>
-
-
-
+  
   </main>
   <!--footer-->
   <footer>
-    <p>Laborationsuppgift för kursen Backend-baserad utveckling
+    <p>Laborationsuppgift för kursen Programmering i TypeScript
     </p>
     <p>Mittuniversitetet</p>
     <p>Copyright © 2025 Rosali Johansson</p>
